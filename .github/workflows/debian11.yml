@@ -103,7 +103,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            BASE=debian${{ env.VERSION }}
+            BASE=${{ env.REGISTRY }}/${{ env.REPO }}/base:debian${{ env.VERSION }}
 
 
       - name: Inspect Docker image

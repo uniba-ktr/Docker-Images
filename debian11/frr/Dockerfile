@@ -1,5 +1,5 @@
-ARG BASE=debian11
-FROM kathara/base:${BASE}
+ARG BASE=kathara/base:debian11
+FROM ${BASE}
 ARG DEBIAN_FRONTEND="noninteractive"
 
 # FRR is integrated in official debian packet sources
